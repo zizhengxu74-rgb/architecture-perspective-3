@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. 透视图的形成 fixed - 建筑视角视频</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .header {
+            background: #2D3748;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            opacity: 0.8;
+            font-size: 16px;
+        }
+
+        .video-section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .video-container {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        video {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .video-info {
+            margin-top: 20px;
+            color: #4A5568;
+        }
+
+        .info-card {
+            background: #F7FAFC;
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 20px;
+            border-left: 5px solid #4299E1;
+        }
+
+        .info-card h3 {
+            color: #2D3748;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .info-item {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .info-item strong {
+            min-width: 100px;
+            color: #4A5568;
+        }
+
+        .footer {
+            background: #EDF2F7;
+            padding: 20px;
+            text-align: center;
+            color: #718096;
+            font-size: 14px;
+        }
+
+        .github-link {
+            color: #4299E1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .github-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 22px;
+            }
+
+            .video-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏗️ 3. 透视图的形成 fixed</h1>
+            <p>建筑视角教学视频 - GitHub Pages</p>
+        </div>
+
+        <div class="video-section">
+            <div class="video-container">
+                <video controls playsinline>
+                    <source src="3. 透视图的形成 fixed.MP4" type="video/mp4">
+                    您的浏览器不支持视频播放，请使用现代浏览器如Chrome、Firefox或Edge。
+                </video>
+            </div>
+
+            <div class="video-info">
+                <p>视频文件: <strong>3. 透视图的形成 fixed.MP4</strong></p>
+                <p>如果视频无法播放，请确保视频文件已上传到本仓库的根目录。</p>
+            </div>
+
+            <div class="info-card">
+                <h3>📋 视频信息</h3>
+                <div class="info-item">
+                    <strong>视频标题:</strong> <span>3. 透视图的形成 fixed</span>
+                </div>
+                <div class="info-item">
+                    <strong>仓库名称:</strong> <span>architecture-perspective-3</span>
+                </div>
+                <div class="info-item">
+                    <strong>视频文件:</strong> <span>3. 透视图的形成 fixed.MP4</span>
+                </div>
+                <div class="info-item">
+                    <strong>视频格式:</strong> <span>MP4</span>
+                </div>
+                <div class="info-item">
+                    <strong>创建者:</strong> <span>徐子铮 (zizhengxu74-rgb)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Powered by GitHub Pages | 
+               <a href="https://github.com/zizhengxu74-rgb/architecture-perspective-3" class="github-link" target="_blank">查看源代码</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // 简单的视频控制增强
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.querySelector('video');
+            const container = document.querySelector('.video-container');
+
+            // 添加加载状态
+            video.addEventListener('loadstart', function() {
+                container.style.position = 'relative';
+            });
+
+            // 视频错误处理
+            video.addEventListener('error', function() {
+                console.error('视频加载失败，请检查文件路径和名称');
+                alert('视频加载失败，请确保视频文件 "' + '3. 透视图的形成 fixed.MP4' + '" 已正确上传到仓库。');
+            });
+        });
+    </script>
+</body>
+</html>
